@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Extract local variable &apos;counterThread&apos; from expression &apos;new CounterThread()&apos;&#x0D;&#x0A;- Original project: &apos;Thread&apos;&#x0D;&#x0A;- Variable name: &apos;counterThread&apos;&#x0D;&#x0A;- Destination method: &apos;ThreadSample.main()&apos;&#x0D;&#x0A;- Variable expression: &apos;new CounterThread()&apos;&#x0D;&#x0A;- Replace occurrences of expression with variable" description="Extract local variable &apos;counterThread&apos;" final="false" id="org.eclipse.jdt.ui.extract.temp" input="/src&lt;{ThreadSample.java" name="counterThread" replace="true" selection="76 20" stamp="1441892461686" version="1.0"/>
+</session>

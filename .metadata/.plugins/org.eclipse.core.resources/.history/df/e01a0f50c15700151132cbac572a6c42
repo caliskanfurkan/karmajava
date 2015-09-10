@@ -1,0 +1,23 @@
+
+public class ThreadSample {
+	public static void main(String[] args) {
+
+	}
+}
+
+class CounterThread extends Thread {
+	
+	private String name;
+	
+	public public CounterThread() {
+		// TODO Auto-generated constructor stub
+		super()
+	}
+	@Override
+	public void run() {
+		for (int i = 0; i <= 100; i++) {
+			System.out.println(i);
+			
+		}
+	}
+}
