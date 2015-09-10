@@ -1,0 +1,85 @@
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
+
+public class OgrenciDaoJdbcImpl implements OgrenciDAO {
+
+	static {
+		try {
+			Class.forName("com.mysql.jdbc.Driver");
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		}
+	}
+
+	@Override
+	public void insert(int id, String ad) throws SQLException {
+		Connection conn = getConnection();
+		PreparedStatement stmt = conn.prepareStatement("INSERT INTO OGRENCI VALUES(?,?,?) ");
+		stmt.setInt(1, id);
+		stmt.setString(2, ad);
+		stmt.setDate(3, new java.sql.Date(System.currentTimeMillis()));
+
+		stmt.executeUpdate();
+		
+		stmt.close();
+		conn.close();
+
+	}
+
+	@Override
+	public void update(int id, String ad) throws SQLException {
+		// TODO Auto-generated method stub
+		Connection conn = getConnection();
+		PreparedStatement stmt = conn.prepareStatement("UPDATE OGRENCI set AD=? WHERE ID=?");
+		stmt.setString(1, ad);
+		stmt.setInt(2, id);
+
+		stmt.executeUpdate();
+		stmt.close();
+		conn.close();
+		
+	}
+
+	@Override
+	public void delete(int id) throws SQLException {
+		// TODO Auto-generated method stub
+		Connection conn = getConnection();
+		PreparedStatement stmt = conn.prepareStatement("DELETE FROM OGRENCI WHERE ID=?");
+		stmt.setInt(1, id);
+
+		stmt.executeUpdate();
+		stmt.close();
+		conn.close();
+	}
+
+	@Override
+	public List<Ogrenci> listAll() {
+		// TODO Auto-generated method stub
+		List<Ogrenci> result = new ArrayList<Ogrenci>()
+		
+		return null;
+	}
+
+	@Override
+	public List<Ogrenci> list(String ad) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	Connection getConnection() {
+		Connection conn = null;
+		try {
+			conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/test_db", "root", "123456");
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+
+		return conn;
+
+	}
+
+}

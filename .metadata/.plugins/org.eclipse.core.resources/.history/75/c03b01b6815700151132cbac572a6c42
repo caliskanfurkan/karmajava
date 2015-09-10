@@ -1,0 +1,8 @@
+
+public class DbSample {
+	public static void main(String[] args) {
+		OgrenciDAO dao;
+		
+		dao.insert(1, "birol");
+	}
+}

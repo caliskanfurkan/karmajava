@@ -1,0 +1,16 @@
+import java.lang.reflect.Method;
+import sun.net.spi.nameservice.dns.DNSNameService;
+
+public class ReflectionSample {
+	public static void main(String[] args) throws ClassNotFoundException {
+		System.setSecurityManager(new SecurityManager());
+		Class klas = Class.forName("sun.net.spi.nameservice.dns.DNSNameService");
+		
+		System.out.println(klas.getName());
+		System.out.println(klas.getSimpleName());
+		Method[] methods = klas.getMethods();
+		for (Method a : methods) {
+			System.out.println(a.getName());
+		}
+	}
+}

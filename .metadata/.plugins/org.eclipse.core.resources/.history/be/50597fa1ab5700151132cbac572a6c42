@@ -1,0 +1,10 @@
+
+public class GenericSample {
+	public static void main(String[] args) {
+		KeyValuePair kp = new KeyValuePair();
+		kp.setKey("ad");
+		kp.setValue("Furkan");
+		System.out.println(kp);
+	}
+}
+	

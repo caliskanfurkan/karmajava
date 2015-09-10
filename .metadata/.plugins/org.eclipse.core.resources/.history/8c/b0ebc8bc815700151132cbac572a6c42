@@ -1,0 +1,15 @@
+
+public class DbSample {
+	public static void main(String[] args) {
+		OgrenciDAO dao;
+		
+		dao.insert(1, "birol");
+		List<Ogrenci> list=dao.listAll();
+	}
+	
+	static void printList(List<Ogrenci> list) {
+		for(Ogrenci ogrenci.list) {
+			
+		}
+	}
+}

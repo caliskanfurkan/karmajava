@@ -1,0 +1,11 @@
+public class Degisken {
+	public void degiskenBas() {
+		int yas=28;
+		double yol=12312312;
+		byte a=3;
+		double pi=3.1415;
+		char b='b';
+		System.out.println("Yaþ\t\Yol\t");
+		System.out.println(yas+"\t"+"\t"+yol+"\t"+a+"\t"+pi+"\t"+b);		
+	}
+}

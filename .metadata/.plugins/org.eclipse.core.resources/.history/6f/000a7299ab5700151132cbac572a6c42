@@ -1,0 +1,32 @@
+
+public class KeyValuePair {
+	public K getKey() {
+		return key;
+	}
+
+
+	public void setKey(K key) {
+		this.key = key;
+	}
+
+
+	public V getValue() {
+		return value;
+	}
+
+
+	public void setValue(V value) {
+		this.value = value;
+	}
+
+
+	private K key;
+	private V value;
+
+
+	@Override
+	public String toString() {
+		return "KeyValuePair [key=" + key + ", value=" + value + "]";
+	}
+
+}

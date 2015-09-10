@@ -1,0 +1,16 @@
+public class HelloWorld {
+
+	public static void main(String[] args) {
+		//System.out.println("Deðiþkenler geliyor");
+		
+		//Degisken a=new Degisken();
+		//a.degiskenBas();
+		
+		String a="f";
+		String b="f";
+		
+		System.out.println(a==b);
+		
+	}
+
+}

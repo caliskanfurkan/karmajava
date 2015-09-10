@@ -1,0 +1,10 @@
+package tr.gov.tubitak.demo;
+
+public class HesapMakinesi {
+	
+	public int sonuc;
+	
+	public void topla(int sayi1, int sayi2) {
+		
+	}
+}

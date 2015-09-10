@@ -1,0 +1,22 @@
+import java.util.List;
+
+public class DbSample {
+	public static void main(String[] args) throws Exception {
+		OgrenciDAO dao = new OgrenciDaoJdbcImpl();
+
+		dao.insert(1, "birol");
+		printList(dao.listAll());
+
+//		dao.update(1, "ali");
+//		printList(dao.listAll());
+//
+//		dao.delete(1);
+//		printList(dao.listAll());
+	}
+
+	static void printList(List<Ogrenci> list) {
+		for (Ogrenci ogrenci : list) {
+			System.out.println(ogrenci);
+		}
+	}
+}

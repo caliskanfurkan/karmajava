@@ -1,0 +1,11 @@
+
+public class IOSample {
+	public static void main(String[] args) {
+
+	}
+
+
+	static void dosyaYaz() {
+		File file=new File("c:\\users\")
+	}
+}

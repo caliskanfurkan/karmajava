@@ -1,0 +1,6 @@
+
+public interface OgrenciDAO {
+	void insert(int id, String ad);
+	
+	void update(int id, String )
+}

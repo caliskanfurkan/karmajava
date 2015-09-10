@@ -1,0 +1,11 @@
+public class HelloWorld {
+
+	static int age=28;
+	static String isimSoyisim="Furkan Çalýþkan";
+	
+	public static void main(String[] args) {
+		System.out.println("Selam nasýlsýn?");
+		
+	}
+
+}

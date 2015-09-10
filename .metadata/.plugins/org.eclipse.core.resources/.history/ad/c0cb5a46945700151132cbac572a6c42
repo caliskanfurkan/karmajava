@@ -1,0 +1,6 @@
+public class ReflectionSample {
+	public static void main(String[] args) throws ClassNotFoundException {
+		Class klas = Class.forName("sun.net.spi.nameservice.dns");
+		System.out.println(klas.getName());
+	}
+}

@@ -1,0 +1,6 @@
+
+public class DbSample {
+	public static void main(String[] args) {
+		OgrenciDao dao;
+	}
+}

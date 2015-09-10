@@ -1,0 +1,43 @@
+import java.util.List;
+
+import java.sql.Connection;
+
+public class OgrenciDaoJdbcImpl implements OgrenciDAO {
+
+	
+	
+	@Override
+	public void insert(int id, String ad) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void update(int id, String ad) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void delete(int id) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public List<Ogrenci> listAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Ogrenci> list(String ad) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	Connection getConnection() {
+		
+	}
+
+}
